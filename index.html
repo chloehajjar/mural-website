@@ -9,17 +9,17 @@
 <style>
 
   body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Rock Salt", cursive;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "wdth" 100;
   font-size: 16px;
-  width: 960px;
+    text-align: center;
 }
    
   h1 {
-  font-family: "Oswald", sans-serif;
+  font-family: "Rock Salt", cursive;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
@@ -37,7 +37,6 @@
   font-weight: 400;
   font-style: normal;
   font-size: 25px;
-    padding-left: 45px;
   }
   
   ul {
@@ -57,15 +56,18 @@
   
   .container {
     display: grid;
-    grid-template-columns: 50% 50%;
-      gap: 15px;
+    grid-template-columns: calc(50% - 7.5px) calc(50% - 7.5px);
+    gap: 15px;
     max-width: 1200px;
     margin: 0 auto;
+    background-color: pink;
   }
   
   .grid-item {
     background-color: lightblue;
     min-height: 150px;
+    max-width: 600px;
+    
   }
   
   .grid-item h2 {
