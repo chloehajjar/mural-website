@@ -23,7 +23,11 @@
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-    background-color: #EBE8E7;
+  background-color: #EBE8E7;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
   }
   
   #site-title {
@@ -51,8 +55,13 @@
     margin-right: 0;
   }
   
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  
   a:hover {
-    color: pink;
+    color: #D58585;
   }
   
   .container {
@@ -80,30 +89,23 @@
 </style>
 </head>
 <body><h1 id="site-title">MURAL ART</h1>
-<nav>
- <ul>
-<li><a href="/">157 HALLS LANE</a></li>
-<li><a href="/">154 KING STREET WEST</a></li>
-<li><a href="/">61 HALLS LANE</a></li>
-<li><a href="/">Contact</a></li>   
-</ul>
-</nav>
+
    <div class="container">
-      <div class="grid-item">
+      <div class="grid-item" id="157-HALLS-LANE">
         <img src="bear-graffiti-image.jpg" alt="a golden baguette filled with vegetables and thine slices of meat">
-        <h2>157 HALLS LANE</h2>
+        <a href="#157-HALLS-LANE">157 HALLS LANE</a>
       </div>
-      <div class="grid-item">
+      <div class="grid-item" id="154-KING-STREET-WEST">
         <img src="red-doe-graffiti-2.jpg" alt="a golden baguette filled with vegetables and thine slices of meat">
-        <h2>154 KING STREET WEST</h2>
+      <a href="#154-KING-STREET-WEST">154 KING STREET WEST</a>
       </div>
-      <div class="grid-item">
+      <div class="grid-item" id="61-HALLS-LANE">
         <img src="orange-robot.jpg" alt="a golden baguette filled with vegetables and thine slices of meat">
-        <h2>61 HALLS LANE</h2>
+        <a href="#61-HALLS-LANE">61 HALLS LANE</a>
       </div>
-      <div class="grid-item">
+      <div class="grid-item" id="STREET-ART">
         <img src="DTK-street.jpg" alt="a golden baguette filled with vegetables and thine slices of meat">
-        <h2>STREET ART</h2>
+        <a href="#STREET-ART">STREET ART</a>
       </div>
     </div>
   
