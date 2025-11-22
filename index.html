@@ -1,115 +1,96 @@
 <!DOCTYPE html>
 <html lang="en-ca">
-<head>
-<title>Landing Page</title>
-<!-- Font for title and nav bar-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">  
-<style>
+  <head>
+    <meta charset="UTF-8">
+    <title>Landing Page</title>
+    <!-- Font for title and nav bar-->
+  
+    <style>
+      body {
+        font-family: "Rock Salt", Arial, sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+        font-size: 16px;
+        text-align: center;
+        background-color: #EBE8E7;
+      }
 
-  body {
-  font-family: "Rock Salt", cursive;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-  font-size: 16px;
-  text-align: center;
-   background-color: #EBE8E7;
-}
+
+      #site-title {
+        color: black;
+        font-weight: 500;
+        
+        /*layout*/
+        width: 100%;
+        max-width: 75rem;
+        margin: 0 auto;
+        height: auto;
+        padding-top: 3rem;
+        
+        /*text*/
+        font-size: 3rem;
+        text-align: center;
+        
+      }
+
+
+
+      a {
+        color: black;
+        text-decoration: none;
+        font-size: 2rem;
+      }
+
+      a:hover {
+        color: #D58585;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: calc(50% - 1rem) calc(50% - 1rem);
+        gap: 2rem;
+        max-width: 75rem;
+        margin: 0 auto;
+
+      }
+
+      .grid-item {
+        
+      }
+
+    
+
+      .grid-item img {
+       
+      }
+      
+    </style>
+  </head>
+  <body>
    
-  h1 {
-  font-family: "Rock Salt", cursive;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-    height: 200px;
-    padding-top: 50px;
-  }
-  
-  #site-title {
-    font-size: 80px;
-    text-align: center;
-    color: black;
-  }
-  
-  nav {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 25px;
-  }
-  
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  li {
-    display: inline-block;
-    margin-right: 0;
-  }
-  
-  a {
-    color: black;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: #D58585;
-  }
-  
-  .container {
-    display: grid;
-    grid-template-columns: calc(50% - 15px) calc(50% - 15px);
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-    
-  }
-  
-  .grid-item {
-    
-  }
-  
-  .grid-item h2 {
-    color: black;
-  }
-  
-  .grid-item img {
-    width: 100%;
-  }
-  
-</style>
-</head>
-<body>
-  <h1 id="site-title">MURAL ART</h1>
+    <h1 id="site-title">MURAL ART</h1>
 
-   <div class="container">
+    <div class="container">
       <div class="grid-item" id="157-HALLS-LANE">
-        <img src="bear-graffiti-image.jpg" alt="a golden baguette filled with vegetables and thine slices of meat">
-        <h2><a href="#157-HALLS-LANE">157 HALLS LANE</a></h2>
+        <img src="bear-graffiti-image.jpg" alt="photography of a Mural representing a blue bear, orange fish, and brown bird found on the corner wall of an alley with a parked silver gray car" style="width: 100%; height: auto;">
+        <a href="#157-HALLS-LANE">157 Halls Lane</a>
       </div>
       <div class="grid-item" id="154-KING-STREET-WEST">
-        <img src="red-doe-graffiti-2.jpg" alt="a golden baguette filled with vegetables and thine slices of meat">
-     <h2><a href="#154-KING-STREET-WEST">154 KING STREET WEST</a></h2> 
+        <img src="red-doe-graffiti-2.jpg" alt="photography of a Mural representing a red doe with a blue gradient background found on the wall of a garage with black pilled-up tiers and a parked black car" style="width: 100%; height: auto;">
+        <a href="#154-KING-STREET-WEST">154 King Street West</a>
       </div>
       <div class="grid-item" id="61-HALLS-LANE">
-        <img src="orange-robot.jpg" alt="a golden baguette filled with vegetables and thine slices of meat">
-        <h2><a href="#61-HALLS-LANE">61 HALLS LANE</a></h2>
+        <img src="orange-robot.jpg" alt="photography of a Graffiti representing an orange robot with green eyes drawn on a purple background of a closed garage door." style="width: 100%; height: auto;">
+        <a href="#61-HALLS-LANE">61 Halls Lane</a>
       </div>
       <div class="grid-item" id="STREET-ART">
-        <img src="DTK-street.jpg" alt="a golden baguette filled with vegetables and thine slices of meat">
-        <h2><a href="#STREET-ART">STREET ART</a></h2>
+        <img src="DTK-street.jpg" alt="photography of a street-controlled intersection of downtown Kitchener" style="width: 100%; height: auto;">
+        <a href="#STREET-ART">Street Art</a>
       </div>
     </div>
-  
-  
-</body>
+
+
+  </body>
 </html>
