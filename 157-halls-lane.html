@@ -48,7 +48,7 @@
         font-optical-sizing: auto;
         font-weight: 400;
         font-style: normal;
-        font-size: 1.5rem;
+        font-size: 32px;
         margin-bottom: 2rem;
         widthL 100%
         max-width: 75rem;
@@ -86,11 +86,13 @@
 
 
       .container {
-        display: grid;
-        grid-template-columns: calc(40% - 1rem) calc(60% - 1rem);
-        gap: 2rem;
-        max-width: 75rem;
-        margin: 0 auto;
+       display: grid;
+  /* Defines 2 columns (40% for visual, 60% for text) and 2 rows (auto sizing) */
+  grid-template-columns: 40% 60%; 
+  grid-template-rows: auto auto; 
+  gap: 2rem;
+  max-width: 75rem;
+  margin: 0 auto;
 
       }
 
@@ -101,9 +103,16 @@
 
 
       .grid-item img {
-        width: 100%;
-          height: auto;
+    width: 100%;
+  height: auto;
+  align-self: start;
       }
+      
+      .text-partition {
+  align-self: start;
+        max-width: 30rem;
+        font-size:
+}
       
       .container h3 {
   font-family: "Winky Rough", sans-serif;
@@ -112,6 +121,7 @@
   font-style: normal;
   text-size: 1rem;
   text-align: left;
+        line-height: 1.5;
       }
 
     </style>
@@ -120,6 +130,7 @@
 
 
     <h1 id="site-title">MURAL ART</h1>
+    
     <div class="container">
         <nav>
         <ul>
@@ -131,18 +142,25 @@
       </nav>  
 
   
+  <img src="bear-graffiti-image.jpg" alt="photography of a Mural representing a blue bear, orange fish, and brown bird found on the corner wall of an alley with a parked silver gray car" style="width: 100%; height: auto; margin-bottom: 2rem;">
 
-
-      <div class="grid-item">
-        <img src="bear-graffiti-image.jpg" alt="photography of a Mural representing a blue bear, orange fish, and brown bird found on the corner wall of an alley with a parked silver gray car" style="width: 100%; height: auto; margin-bottom: 2rem;">
-        
+      <div class="text-partition">
+       <h3><strong>Title:</strong>KINSHIP <strong>Year:</strong>2020 <strong>Medium:</strong>Mixed media</h3>
+        <h3> Also known as Morningstar, Alanah is a French-First Nations artist.
+          Her work promotes Indigenous art and culture in urban areas. In her works,
+          Morningstar gives hope to a younger generation trying to find their identity through art.
+          She uses a lot of imagery and symbolisms found in her culture to illustrate in her paintings.</h3>
+        </div>
         <img src="red-doe-graffiti-2.jpg" alt="photography of a Mural representing a red doe with a blue gradient background found on the wall of a garage with black pilled-up tiers and a parked black car" style="width: 100%; height: auto;">
 
-      </div>
-      <div class="grid-item">
-        <h3><strong>Title:</strong>KINSHIP <strong>Year:</strong>2020 <strong>Medium:</strong>Mixed media </h3>
-        <h3> Also known as Morningstar, Alanah is a French-First Nations artist. Her work promotes Indigenous art and culture in urban areas. In her works, Morningstar gives hope to a younger generation trying to find their identity through art. She uses a lot of imagery and symbolisms found in her culture to illustrate in her paintings.</h3>
-        <h3> This mural highlights the importance of living in a community. Each animal is surrounded by its elements as well as being part of each other’s elements. The harmony achieved in this artwork showcases the beauty of building a healthy community and contributing to the happiness of others. The bright and joyful colors give life to the animals found in the artist’s culture.</h3>
+      
+      <div class="text-partition">
+       
+        <h3> This mural highlights the importance of living in a community.
+          Each animal is surrounded by its elements as well as being part of each other’s elements.
+          The harmony achieved in this artwork showcases the beauty of building a healthy community
+          and contributing to the happiness of others. The bright and joyful colors give life to the
+          animals found in the artist’s culture.</h3>
       </div>
 
     </div>
