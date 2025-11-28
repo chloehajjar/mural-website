@@ -1,1 +1,207 @@
-hi
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <meta charset="UTF-8">
+    <title>Landing Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+    <style>
+      
+      body {
+        background-color: #EBE8E7;
+        text-align: center;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      li {
+        display: inline-block;
+        margin-right: 1.5rem;
+      }
+
+            a {
+        color: black;
+        text-decoration: none;
+        font-size: 2rem;
+      }
+
+    
+
+      #site-title {
+        font-family: "Rock Salt", Arial, sans-serif;
+        color: black;
+        font-weight: 500;
+        font-size: 3rem;
+        text-align: center;
+
+        
+        width: 100%;
+        max-width: 75rem;
+        margin: 0 auto;
+        padding-top: 3rem;
+      }
+
+      .container nav {
+        font-family: "Rock Salt", Arial, sans-serif;
+        font-weight: 400;
+
+        
+        grid-column: 1/-1;
+        margin-bottom: 1rem;
+      }
+
+      
+      .container a {
+        color: black;
+        text-decoration: none;
+        font-size: 1.8rem;
+
+      }
+
+      .container a:hover {
+        color: #D58585;
+      }
+
+
+
+      .container {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: auto auto;
+        gap: 2rem;
+        max-width: 75rem;
+        margin: 0 auto;
+      }
+
+      
+      .container img {
+        
+        align-self: start;
+      }
+
+    
+
+      .text-partition {
+       
+        align-self: start;
+        max-width: 40rem;
+
+        
+        font-family: "Winky Rough", sans-serif;
+        font-style: normal;
+
+       
+        text-align: left;
+        line-height: 1.5;
+
+
+      }
+
+      
+      .text-partition h3,
+      .text-partition h4 {
+        margin-top: 0;
+
+        /* Specific text properties */
+        font-weight: 500;
+        font-size: 1.5rem;
+        /* Consistent size for content text */
+        line-height: 1.5;
+        /* Ensure line height is consistent */
+        margin-bottom: 1rem;
+        /* Space between the headings/paragraphs */
+      }
+      
+      table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid blue;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: pink;
+}
+      
+      .container table {
+  grid-column: 1 / -1; 
+}
+    </style>
+  </head>
+  <body>
+
+        <a href="index.html" id="site-title-link">
+  <h1 id="site-title">MURAL ART</h1>
+</a>
+
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="157-halls-lane.html">157 Halls Lane</a></li>
+          <li><a href="154-king-street-west.html">154 King Street West</a></li>
+          <li><a href="61-halls-lane.html">61 Halls Lane</a></li>
+        </ul>
+      </nav>
+
+      <img src="bear-graffiti-image.jpg" alt="photography of a Mural representing a blue bear, orange fish, and brown bird found on the corner wall of an alley with a parked silver gray car" style="width: 100%; height: auto; margin-bottom: 2rem;">
+
+      <div class="text-partition">
+
+        <h3><strong>TITLE: </strong>KINSHIP <strong>YEAR: </strong>2020 <strong>MEDIUM: </strong>Mixed media</h3>
+
+        <h4><strong>About the artist: </strong> Artist for all over Ontario.</h4>
+      </div>
+
+      <div class="text-partition">
+
+        
+      </div>
+  <table>
+  <tr>
+    <th>Artists</th>
+    <th>Instagram</th>
+    <th>Other Works</th>
+  </tr>
+  <tr>
+    <td>Alaha Jewell</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Bruno Smoky</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Luke Swinson</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>August Swinson</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+ 
+</table>
+    </div>
+  
+
+  </body>
+</html>
