@@ -124,24 +124,36 @@
       }
       
       table {
-  font-family: arial, sans-serif;
+  font-family: "Rock Salt", Arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
 
 td, th {
-  border: 1px solid blue;
+  border: 0.2rem solid black;
   text-align: left;
-  padding: 8px;
+  padding: 0.8rem;
+  
 }
 
 tr:nth-child(even) {
-  background-color: pink;
+  
 }
       
       .container table {
   grid-column: 1 / -1; 
 }
+      
+      th {
+    font-family: "Rock Salt", cursive;
+    font-weight: normal; /* Rock Salt doesn't have many weights */
+        background-color: beige;
+  }
+
+  /* Apply Winky Rough to table data cells (<td>) */
+  td {
+    font-family: "Winky Rough", sans-serif;
+  }
     </style>
   </head>
   <body>
@@ -159,7 +171,7 @@ tr:nth-child(even) {
         </ul>
       </nav>
 
-      <img src="bear-graffiti-image.jpg" alt="photography of a Mural representing a blue bear, orange fish, and brown bird found on the corner wall of an alley with a parked silver gray car" style="width: 100%; height: auto; margin-bottom: 2rem;">
+      <img src="DTK-street.jpg" alt="photography of a street-controlled intersection of downtown Kitchener" style="width: 100%; height: auto; margin-bottom: 2rem;">
 
       <div class="text-partition">
 
