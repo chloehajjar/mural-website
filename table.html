@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <title>Landing Page</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -57,7 +56,7 @@
         font-weight: 400;
 
         
-        grid-column: 1/-1;
+       
         margin-bottom: 1rem;
       }
 
@@ -77,7 +76,8 @@
 
       .container {
         display: grid;
-        grid-template-columns: 100%  ;
+        grid-template-columns: 100% ;
+         grid-column: 1/-1;
         grid-template-rows: auto auto;
         gap: 2rem;
         max-width: 75rem;
@@ -85,77 +85,31 @@
       }
 
       
-      .container img {
-        
-        align-self: start;
-      }
-
     
-
-      .text-partition {
-       
-        align-self: start;
-        max-width: 40rem;
-
-        
-        font-family: "Winky Rough", sans-serif;
-        font-style: normal;
-
-       
-        text-align: left;
-        line-height: 1.5;
-
-
-      }
-
-      
-      .text-partition h3,
-      .text-partition h4 {
-        margin-top: 0;
-
-        /* Specific text properties */
-        font-weight: 500;
-        font-size: 1.5rem;
-        /* Consistent size for content text */
-        line-height: 1.5;
-        /* Ensure line height is consistent */
-        margin-bottom: 1rem;
-        /* Space between the headings/paragraphs */
-      }
-      
-      table {
-  font-family: "Rock Salt", Arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-td, th {
-  
+.text-partition {
+  /* Existing properties */
+  max-width: 50rem; /* Crucial: An element must have a defined width less than 100% to center */
+  font-size: 1.5rem;
+  font-family: "Winky Rough", sans-serif;
+  font-style: normal;
   text-align: center;
-  padding: 0.8rem;
-  
+  line-height: 1.5;
+
+  /* Centering Properties */
+  align-self: unset; /* Remove or change this if it's interfering with centering */
+  margin: 0 auto; 
 }
 
-tr:nth-child(even) {
-  
-}
       
-      .container table {
-  grid-column: 1 / -1; 
+.container img {
+  /* This is the key change to control the image's height */
+  max-height: 30rem; /* Adjust this value (e.g., 20rem, 400px) to your desired maximum height */
+  width: auto;      /* Ensures the image maintains its aspect ratio */
+  object-fit: cover; /* Optional: This crops the image to fill the space without distortion */
 }
-      
-      th {
-    font-family: "Rock Salt", cursive;
-    font-weight: normal; /* Rock Salt doesn't have many weights */
-        background-color: #e6b3b3;
-        font-size: 1.5rem;
-  }
 
-  /* Apply Winky Rough to table data cells (<td>) */
-  td {
-    font-family: "Winky Rough", sans-serif;
-    font-size: 1.3rem;
-  }
+      
+
     </style>
   </head>
   <body>
@@ -176,19 +130,17 @@ tr:nth-child(even) {
       <img src="DTK-street.jpg" alt="photography of a street-controlled intersection of downtown Kitchener" style="width: 100%; height: auto; margin-bottom: 2rem;">
 
       <div class="text-partition">
-
-        <h3><strong>HOW IT ALL STARTE: </strong>My passion for graffiti art started back in 2024 during my first year of GBDA studies. For my final project in GBDA 101, I decided to create a magazine showcasing some of the most beautiful artworks of my region. With a camera in my hands, I wandered the colorful alleyways of Downtown Kitchener, capturing true masterpieces with a simple click of a button. </h3>
+        
+     
+           <h3><strong>HOW IT ALL STARTE: </strong>
+          My passion for graffiti art started back in 2024 during my first year of GBDA studies. For my final project in GBDA 101, I decided to create a magazine showcasing some of the most beautiful artworks of my region. With a camera in my hands, I wandered the colorful alleyways of Downtown Kitchener, capturing true masterpieces with a simple click of a button. </h3>                         
+    
 
         
       </div>
-<img src="DTK-street.jpg" alt="photography of a street-controlled intersection of downtown Kitchener" style="width: 100%; height: auto; margin-bottom: 2rem;">
-      <div class="text-partition">
-
-        
-      </div>
-
+     
+ <img src="chloe-hajjar-camera.jpg" alt="photography of a street-controlled intersection of downtown Kitchener" style="width: 100%; height: auto; margin-bottom: 2rem;">
     </div>
   
-
   </body>
 </html>
