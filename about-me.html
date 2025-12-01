@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Landing Page</title>
 
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
     <style>
-      
       body {
         background-color: #EBE8E7;
         text-align: center;
@@ -29,13 +28,13 @@
         margin-right: 1.5rem;
       }
 
-            a {
+      a {
         color: black;
         text-decoration: none;
         font-size: 2rem;
       }
 
-    
+
 
       #site-title {
         font-family: "Rock Salt", Arial, sans-serif;
@@ -43,24 +42,20 @@
         font-weight: 500;
         font-size: 3rem;
         text-align: center;
-
-        
         width: 100%;
         max-width: 75rem;
         margin: 0 auto;
         padding-top: 3rem;
       }
+      
 
       .container nav {
         font-family: "Rock Salt", Arial, sans-serif;
         font-weight: 400;
-
-        
-       
         margin-bottom: 1rem;
       }
 
-      
+
       .container a {
         color: black;
         text-decoration: none;
@@ -76,45 +71,34 @@
 
       .container {
         display: grid;
-        grid-template-rows: auto auto;
-        gap: 2rem;
+        gap:2rem;
         max-width: 75rem;
         margin: 0 auto;
       }
 
+
+
+      .text-partition {
+        max-width: 50rem;
+        font-size: 1.5rem;
+        font-family: "Winky Rough", sans-serif;
+        font-weight: 300;
+        text-align: center;
+        line-height: 1.5;
+        margin: 0 auto;
+      }
+
+
+      .container img {
+        max-height: 30rem;
+        object-fit: cover;
+      }
       
-    
-.text-partition {
-  /* Existing properties */
-  max-width: 50rem; /* Crucial: An element must have a defined width less than 100% to center */
-  font-size: 1.5rem;
-  font-family: "Winky Rough", sans-serif;
-  font-style: normal;
-  text-align: center;
-  line-height: 1.5;
-
-  /* Centering Properties */
-  align-self: unset; /* Remove or change this if it's interfering with centering */
-  margin: 0 auto; 
-}
-
-      
-.container img {
-  /* This is the key change to control the image's height */
-  max-height: 30rem; /* Adjust this value (e.g., 20rem, 400px) to your desired maximum height */
-  width: auto;      /* Ensures the image maintains its aspect ratio */
-  object-fit: cover; /* Optional: This crops the image to fill the space without distortion */
-}
-
-      
-
     </style>
   </head>
   <body>
 
-        <a href="index.html" id="site-title-link">
-  <h1 id="site-title">MURAL ART</h1>
-</a>
+    <a href="index.html"><h1 id="site-title">MURAL ART</h1></a>
 
     <div class="container">
       <nav>
@@ -122,34 +106,31 @@
           <li><a href="157-halls-lane.html">157 Halls Lane</a></li>
           <li><a href="154-king-street-west.html">154 King Street West</a></li>
           <li><a href="61-halls-lane.html">61 Halls Lane</a></li>
-           <li><a href="about-me.html">About Me</a></li>
+          <li><a href="about-me.html">About Me</a></li>
         </ul>
       </nav>
 
       <img src="DTK-street.jpg" alt="photography of a street-controlled intersection of downtown Kitchener" style="width: 100%; height: auto; margin-bottom: 2rem;">
 
       <div class="text-partition">
-        
-     
-           <h3><strong>HOW IT ALL STARTED:</strong>
+
+        <h3><strong>HOW IT ALL STARTED:</strong>
           My passion for graffiti art started back in 2024 during my first year of GBDA studies. For my final project in GBDA 101,
-             I decided to create a magazine showcasing some of the most beautiful artworks of my region. </h3>                         
-    <h3>
-      With a camera in my hands,
-             I wandered the colorful alleyways of Downtown Kitchener, capturing true masterpieces with a simple click of a button.
-             All of the photos showcased here are the ones I took during this great adventure!
-        </h3>
-         I would be happy to chat more about my passion with you!
-        Need more Inspirations?
+          I decided to create a magazine showcasing some of the most beautiful artworks of my region. </h3>
+        
         <h3>
-          
+          With a camera in my hands,
+          I wandered the colorful alleyways of Downtown Kitchener, capturing true masterpieces with a simple click of a button.
+          All of the photos showcased here are the ones I took during this great adventure!
+        </h3>
+        <h3>
+          I would be happy to <a href="mailto:chajjar@uwaterloo.ca"> CHAT</a> more about my passion with you!
         </h3>
 
-        
       </div>
-     
- <img src="chloe-hajjar-camera.jpg" alt="photography of a street-controlled intersection of downtown Kitchener" style="width: 100%; height: auto; margin-bottom: 2rem;">
+
+      <img src="chloe-hajjar-camera.jpg" alt="photography of a street-controlled intersection of downtown Kitchener" style="width: 100%; height: auto; margin-bottom: 2rem;">
     </div>
-  
+
   </body>
 </html>
