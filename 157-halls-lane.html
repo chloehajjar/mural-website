@@ -2,7 +2,7 @@
 <html lang="en-ca">
   <head>
     <meta charset="UTF-8">
-    <title>Landing Page</title>
+    <title>157 Halls Lane</title>
 
     <!-- Font for title and nav bar-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,25 +17,6 @@
         background-color: #EBE8E7;
         text-align: center;
       }
-
-      ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-
-      li {
-        display: inline-block;
-        margin-right: 1.5rem;
-      }
-
-      a {
-        color: black;
-        text-decoration: none;
-        font-size: 2rem;
-      }
-
-
 
       #site-title {
         font-family: "Rock Salt", Arial, sans-serif;
@@ -55,23 +36,35 @@
         color: #D58585;
       }
 
+      .container {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        gap: 2rem;
+        max-width: 75rem;
+        margin: 0 auto;
+      }
 
+      .container ul {
+        padding: 0;
+        margin: 0;
+      }
+
+      .container li {
+        display: inline-block;
+        margin-right: 1.5rem;
+      }
 
       .container nav {
         font-family: "Rock Salt", Arial, sans-serif;
         font-weight: 400;
-
-
         grid-column: 1/-1;
         margin-bottom: 1rem;
       }
 
-
       .container a {
+        font-size: 1.65rem;
         color: black;
         text-decoration: none;
-        font-size: 1.8rem;
-
       }
 
       .container a:hover {
@@ -79,53 +72,33 @@
       }
 
 
+      .text-partition a {
+        color: #D58585;
+      }
 
-      .container {
-        display: grid;
-        grid-template-columns: 40% 60%;
-        grid-template-rows: auto auto;
-        gap: 2rem;
-        max-width: 75rem;
-        margin: 0 auto;
+      .text-partition a:hover {
+        color: white;
       }
 
 
-      .container img {
+      .text-partition h2,
+      .text-partition h3 {
 
-        align-self: start;
-      }
-
-
-
-      .text-partition {
-
-        align-self: start;
-        max-width: 40rem;
-
-
+        max-width: 43rem;
         font-family: "Winky Rough", sans-serif;
-        font-style: normal;
-
-
         text-align: left;
         line-height: 1.5;
-
-
-      }
-
-
-      .text-partition h3,
-      .text-partition h4 {
         margin-top: 0;
-
-        /* Specific text properties */
         font-weight: 500;
-        font-size: 1.5rem;
-        /* Consistent size for content text */
-        line-height: 1.5;
-        /* Ensure line height is consistent */
         margin-bottom: 1rem;
-        /* Space between the headings/paragraphs */
+      }
+      
+      .text-partition h2 {
+        font-size: 1.6rem;
+      }
+      
+      .text-partition h3 {
+        font-size: 1.5rem;
       }
 
       nav ul li a.active {
@@ -135,6 +108,7 @@
       }
     </style>
   </head>
+
   <body>
 
     <a href="index.html" id="site-title-link">
@@ -148,24 +122,20 @@
           <li><a href="154-king-street-west.html">154 King Street West</a></li>
           <li><a href="61-halls-lane.html">61 Halls Lane</a></li>
           <li><a href="about-me.html">About Me</a></li>
-
         </ul>
       </nav>
 
       <img src="bear-graffiti-image.jpg" alt="photography of a Mural representing a blue bear, orange fish, and brown bird found on the corner wall of an alley with a parked silver gray car" style="width: 100%; height: auto; margin-bottom: 2rem;">
 
       <div class="text-partition">
-
-        <h3><strong>TITLE: </strong>KINSHIP <strong>YEAR: </strong>2020 <strong>MEDIUM: </strong>Mixed media</h3>
-
-        <h4><strong>About the artist: </strong>Also known as Morningstar, <a href="https://www.instagram.com/morning.star.designs/?hl=en" target="_blank">Alanah Jewell</a> is a French-First Nations artist. Her work promotes Indigenous art and culture in urban areas. In her works, Morningstar gives hope to a younger generation trying to find their identity through art. She uses a lot of imagery and symbolisms found in her culture to illustrate in her paintings.</h4>
+        <h2><strong>TITLE: </strong>KINSHIP <strong>YEAR: </strong>2020 <strong>MEDIUM: </strong>Mixed media</h2>
+        <h3><strong>About the artist: </strong>Also known as Morningstar, <a href="https://www.instagram.com/morning.star.designs/?hl=en" target="_blank">Alanah Jewell</a> is a French-First Nations artist. Her work promotes Indigenous art and culture in urban areas. In her works, Morningstar gives hope to a younger generation trying to find their identity through art. She uses a lot of imagery and symbolisms found in her culture to illustrate in her paintings.</h3>
       </div>
 
       <img src="bear-graffiti-2.jpg" alt="photography of a Mural representing a blue turtle, and brown dear with flowers, found on a corner wall with a parked silver car" style="width: 100%; height: auto;">
 
       <div class="text-partition">
-
-        <h4><strong>About this mural:</strong> This mural highlights the importance of living in a community. Each animal is surrounded by its elements as well as being part of each other’s elements. The harmony achieved in this artwork showcases the beauty of building a healthy community and contributing to the happiness of others. The bright and joyful colors give life to the animals found in the artist’s culture.</h4>
+        <h3><strong>About this mural:</strong> This mural highlights the importance of living in a community. Each animal is surrounded by its elements as well as being part of each other’s elements. The harmony achieved in this artwork showcases the beauty of building a healthy community and contributing to the happiness of others. The bright and joyful colors give life to the animals found in the artist’s culture.</h3>
       </div>
 
     </div>
