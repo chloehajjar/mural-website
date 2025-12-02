@@ -2,11 +2,12 @@
 <html lang="en-ca">
   <head>
     <meta charset="UTF-8">
-    <title>Landing Page</title>
+    <title>About Me</title>
 
-
+    <!-- Font for title and nav bar-->
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
 
+    <!-- Font for content-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
@@ -17,37 +18,41 @@
         text-align: center;
       }
 
-      ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-
-      li {
-        display: inline-block;
-        margin-right: 1.5rem;
-      }
-
-      a {
-        color: black;
-        text-decoration: none;
-        font-size: 2rem;
-      }
-
-
-
       #site-title {
         font-family: "Rock Salt", Arial, sans-serif;
         color: black;
         font-weight: 500;
-        font-size: 3rem;
-        text-align: center;
-        width: 100%;
-        max-width: 75rem;
         margin: 0 auto;
         padding-top: 3rem;
+        font-size: 3rem;
+        text-align: center;
       }
-      
+
+      #site-title-link {
+        text-decoration: none;
+      }
+
+      #site-title-link:hover #site-title {
+        color: #D58585;
+      }
+
+      .container {
+        display: grid;
+        gap: 2rem;
+        max-width: 75rem;
+        margin: 0 auto;
+      }
+
+      .container ul {
+        padding: 0;
+        margin: 0;
+      }
+
+      .container li {
+        display: inline-block;
+        margin-right: 1.5rem;
+      }
+
 
       .container nav {
         font-family: "Rock Salt", Arial, sans-serif;
@@ -67,44 +72,42 @@
         color: #D58585;
       }
 
-
-
-      .container {
-        display: grid;
-        gap:2rem;
-        max-width: 75rem;
-        margin: 0 auto;
+      .container img {
+        max-height: 30rem;
+        object-fit: cover;
       }
 
-
-
-      .text-partition {
+      .text-partition h3 {
         max-width: 50rem;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         font-family: "Winky Rough", sans-serif;
-        font-weight: 300;
+        font-weight: 500;
         text-align: center;
         line-height: 1.5;
         margin: 0 auto;
       }
 
-
-      .container img {
-        max-height: 30rem;
-        object-fit: cover;
+      .text-partition a {
+        color: #D58585;
       }
-      
-           nav ul li a.active {
-  border-bottom: 0.2rem solid #D58585;
-  color: #D58585;
-  font-weight: bold;
-}
-      
+
+      .text-partition a:hover {
+        color: white;
+      }
+
+
+      nav ul li a.active {
+        border-bottom: 0.2rem solid #D58585;
+        color: #D58585;
+        font-weight: bold;
+      }
     </style>
   </head>
   <body>
 
-    <a href="index.html"><h1 id="site-title">MURAL ART</h1></a>
+    <a href="index.html" id="site-title-link">
+      <h1 id="site-title">MURAL ART</h1>
+    </a>
 
     <div class="container">
       <nav>
@@ -119,11 +122,9 @@
       <img src="DTK-street.jpg" alt="photography of a street-controlled intersection of downtown Kitchener" style="width: 100%; height: auto; margin-bottom: 2rem;">
 
       <div class="text-partition">
-
         <h3><strong>HOW IT ALL STARTED:</strong>
           My passion for graffiti art started back in 2024 during my first year of GBDA studies. For my final project in GBDA 101,
           I decided to create a magazine showcasing some of the most beautiful artworks of my region. </h3>
-        
         <h3>
           With a camera in my hands,
           I wandered the colorful alleyways of Downtown Kitchener, capturing true masterpieces with a simple click of a button.
@@ -135,7 +136,6 @@
         <h3>
           My <a href="discover-more.html">INSPITAION?</a>
         </h3>
-
       </div>
 
       <img src="chloe-hajjar-camera.jpg" alt="photography of a street-controlled intersection of downtown Kitchener" style="width: 100%; height: auto; margin-bottom: 2rem;">
