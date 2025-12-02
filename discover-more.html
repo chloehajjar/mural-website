@@ -2,14 +2,13 @@
 <html lang="en-ca">
   <head>
     <meta charset="UTF-8">
-    <title>Landing Page</title>
-
+    <title>Discover More Page</title>
+    <!-- Font for title and nav bar-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Font for content-->
     <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
     <style>
@@ -17,45 +16,39 @@
         background-color: #EBE8E7;
         text-align: center;
       }
+      
+        #site-title {
+        font-family: "Rock Salt", Arial, sans-serif;
+        color: black;
+        font-weight: 500;
+        margin: 0 auto;
+        padding-top: 3rem;
+        font-size: 3rem;
+        text-align: center;
+      }
 
-      ul {
-        list-style: none;
+      #site-title-link {
+        text-decoration: none;
+      }
+
+      #site-title-link:hover #site-title {
+        color: #D58585;
+      }
+
+      .container ul {
         padding: 0;
         margin: 0;
       }
 
-      li {
+      .container li {
         display: inline-block;
         margin-right: 1.5rem;
       }
 
-      a {
-        color: black;
-        text-decoration: none;
-        font-size: 2rem;
-      }
-
-
-
-      #site-title {
-        font-family: "Rock Salt", Arial, sans-serif;
-        color: black;
-        font-weight: 500;
-        font-size: 3rem;
-        text-align: center;
-
-
-        width: 100%;
-        max-width: 75rem;
-        margin: 0 auto;
-        padding-top: 3rem;
-      }
 
       .container nav {
         font-family: "Rock Salt", Arial, sans-serif;
         font-weight: 400;
-
-
         grid-column: 1/-1;
         margin-bottom: 1rem;
       }
@@ -73,7 +66,6 @@
       }
 
 
-
       .container {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -82,44 +74,20 @@
         max-width: 75rem;
         margin: 0 auto;
       }
-
-
-      .container img {
-
-        align-self: start;
+     
+      .container table {
+        grid-column: 1 / -1;
       }
-
-
-
-      .text-partition {
-
-        align-self: start;
+      
+      .text-partition h3 {
         max-width: 40rem;
-
-
-        font-family: "Winky Rough", sans-serif;
-        font-style: normal;
-
-
-        text-align: left;
-        line-height: 1.5;
-
-
-      }
-
-
-      .text-partition h3,
-      .text-partition h4 {
         margin-top: 0;
-
-        /* Specific text properties */
+        font-family: "Winky Rough", sans-serif;
+        text-align: left;
         font-weight: 500;
-        font-size: 1.5rem;
-        /* Consistent size for content text */
+        font-size: 1.6rem;
         line-height: 1.5;
-        /* Ensure line height is consistent */
         margin-bottom: 1rem;
-        /* Space between the headings/paragraphs */
       }
 
       table {
@@ -132,31 +100,24 @@
         padding: 0.8rem;
       }
 
-
-
-      .container table {
-        grid-column: 1 / -1;
-      }
-
       th {
         font-family: "Rock Salt", cursive;
         font-weight: normal;
         background-color: #e6b3b3;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
       }
 
       td {
         font-family: "Winky Rough", sans-serif;
-        font-size: 1.4rem;
+        font-size: 1.5rem;
       }
       
-           nav ul li a.active {
+  nav ul li a.active {
   border-bottom: 0.2rem solid #D58585;
   color: #D58585;
   font-weight: bold;
 }
      
-      
     </style>
   </head>
   <body>
@@ -166,7 +127,6 @@
     </a>
 
     <div class="container">
-
       <nav>
         <ul>
           <li><a href="157-halls-lane.html">157 Halls Lane</a></li>
@@ -179,37 +139,39 @@
       <img src="kwsa-photo.jpg" alt="photography of a street-controlled intersection of downtown Kitchener" style="width: 100%; height: auto; margin-bottom: 2rem;">
 
       <div class="text-partition">
-
           <h3><strong>NOT JUST ON THE STREETS</strong> The DTK is the place where local artists creates vibrant murals to celebrate the community and the city's history. You can also find inspiration by visiting the artwork gallery of the KW Society of Artists nested in the heart of the city. </h3>
           <h3><strong>SUPPORT A LOCAL ARTIST:</strong> The artworks showcased here are just a few of the many other fabulous works our artists created! Afterall, the best place to look at other beautiful artowkrs is by visitng the artist's websites!</h3>
       </div>
 
       <table>
+        
         <tr>
           <th>Our Artists</th>
           <th>Discover More</th>
         </tr>
+        
         <tr>
-          
           <td>Alanah Jewell</td>
           <td><a href="https://morningstardesigns.ca/" target="_blank">MORNINGSTAR DESIGNS</a></td>
         </tr>
+        
         <tr>
           <td>August Swinson</td>
           <td><a href="https://www.strongnations.com/store/12208/the-wandering-feather" target="_blank">STRONG NATIONS</a></td>
         </tr>
-
+        
         <tr>
           <td>Bruno Smoky</td>
           <td><a href="https://smokysp.jimdoweb.com/" target="_blank">BRUNO SMOKY</a></td>
         </tr>
+        
         <tr>
           <td>Luke Swinson</td>
           <td><a href="https://lukeswinsonart.com/" target="_blank">LUKE SWINSON ART</a></td>
         </tr>
-
+        
       </table>
+      
     </div>
-
   </body>
 </html>
